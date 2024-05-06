@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 const Header = ({item,setItem,search,setSearch,handleSubmit}) => {
+    const inputRef=useRef()
   return (
     <header className='header'>
         <h1>Notes</h1>
         <form className="addItem" onSubmit={handleSubmit}>
             <input 
+            ref={inputRef}
             autoFocus
             required
             type="text" 
@@ -14,7 +16,9 @@ const Header = ({item,setItem,search,setSearch,handleSubmit}) => {
             value={item}
             onChange={(e)=>setItem(e.target.value)}
             />
-            <button className="btn">Add</button>
+            <button
+            onClick={()=>inputRef.current.focus()}
+            className="btn">Add</button>
         </form>
         <section className="searchItem">
             <input 
