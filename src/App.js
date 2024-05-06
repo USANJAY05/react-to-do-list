@@ -7,8 +7,8 @@ function App() {
   const [items,setItems]=useState([])
   const [item,setItem]=useState("")
   const [search,setSearch]=useState("")
-  const [error,setError]=useState()
-  const [loading,setLoading]=useState()
+  // const [error,setError]=useState()
+  // const [loading,setLoading]=useState()
 
   useEffect(()=>{
     const storage=JSON.parse(localStorage.getItem("item"))||[]
