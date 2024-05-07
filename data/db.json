@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "id": "21",
+      "text": "py tourch",
+      "checked": false
+    },
+    {
+      "id": "22",
+      "text": "gen ai",
+      "checked": true
+    },
+    {
+      "id": "23",
+      "text": "llm",
+      "checked": false
+    },
+    {
+      "id": "24",
+      "text": "nlp",
+      "checked": false
+    },
+    {
+      "id": "25",
+      "text": "cna",
+      "checked": false
+    },
+    {
+      "id": "26",
+      "text": "cnn",
+      "checked": true
+    },
+    {
+      "id": "27",
+      "text": "package manager",
+      "checked": true
+    },
+    {
+      "id": 8,
+      "text": "dd",
+      "checked": false
+    },
+    {
+      "id": 9,
+      "text": "add",
+      "checked": false
+    }
+  ]
+}

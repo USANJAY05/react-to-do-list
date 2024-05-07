@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Main = ({handleDel,handleCheck,items}) => {
+const Main = ({handleDel,handleCheck,items,error,loading}) => {
   return (
     <section className="main">
-        {items.map(item=>(
+            {error && <p>{`Error: ${error}`}</p>}
+      {loading && <p>Loading....</p>}
+      {!error && !loading &&
+        (items.map(item=>(
         <section key={item.id} className="container">
             <input 
             checked={item.checked}
@@ -17,7 +20,7 @@ const Main = ({handleDel,handleCheck,items}) => {
             onClick={()=>handleDel(item.id)}
             className="delBtn">Delete</button>
     </section>
-        ))}
+        )))}
     </section>
   )
 }
