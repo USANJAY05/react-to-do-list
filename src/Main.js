@@ -3,7 +3,8 @@ import React from 'react'
 const Main = ({handleDel,handleCheck,items,error,loading}) => {
   return (
     <section className="main">
-            {error && <p>{`Error: ${error}`}</p>}
+      
+      {error && <p>{`Error: ${error}`}</p>}
       {loading && <p>Loading....</p>}
       {!error && !loading &&
         (items.map(item=>(

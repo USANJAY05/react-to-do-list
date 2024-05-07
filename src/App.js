@@ -29,7 +29,10 @@ function App() {
         setLoading(false)
       }
     }
-    (async()=>fetchItem())()
+    setTimeout(() => {
+      (async()=>fetchItem())()
+
+    }, 2000);
 
   },[])
 
